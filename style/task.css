@@ -1,0 +1,100 @@
+*{box-sizing: border-box;}
+body{margin: auto;}
+header{
+    background-image: url(../assets/images/beautiful-shot-single-green-tree-field-near-sea.jpg);
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 620px;
+    margin-top: 0;
+    
+}
+header h1{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 240px;
+    font-size: 60px;
+    color: #002a36;
+}
+header i{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    font-size: 60px;
+    color: #014457;
+}
+header i:hover{
+    color:#89bedb ;
+}
+nav {
+     background-color: #001f27;
+    padding: 10px;
+    color: #89bedb;
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+#navbar .cont details li a{
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color:#89bedb ;
+}
+nav ul{
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+   
+}
+nav ul li{
+    margin-left: 60px; 
+    font-size: 20px;
+     
+}
+nav ul li a{
+    text-decoration: none;color: #89bedb; 
+}
+#info{background-color: #cde8f7;}
+section div{
+    background-color:#bbe5fc ;
+    
+    /* overflow: hidden; */
+}
+section div img{
+    float: left;
+    width: 45% !important;
+   height: 494px !important;
+   margin: 20px 0 20px 15px;
+   /* margin-left: 15px; */
+   
+}
+section div #para1{
+    float: left;
+    text-align: left;
+    width: 50%;
+    
+    padding: 15px;
+    margin: 20px 0 20px 40px;
+}
+section div #para2{
+    float: left;
+    text-align: left;
+    width: 50%;
+    
+    padding: 15px;
+    margin: 2px 0 20px 40px;
+}
+.clear-fix{clear: both;}
+footer{
+    background-color: #002a36;
+    color: #89bedb;
+    padding: 15px 0;
+    text-align: center;
+}
+footer div a i{color:#89bedb ;}
+footer div a i:hover{color: #fff;}

@@ -1,0 +1,404 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1154px;
+    margin: auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* navbar start */
+.navbar {
+    font-size: 18px;
+    height: 0;
+    color: #c2d5d6;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar .brand {
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+}
+
+.navbar .links {
+    float: left;
+    width: 50%;
+    margin-top: 19px;
+    font-weight: bold;
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 15px;
+
+}
+
+.navbar .links li a {
+    text-decoration: none;
+    color: #c2d5d6;
+    /* border-bottom: 2px solid #2fd8eb; */
+}
+
+.navbar .links li a:hover {
+    color: #2fd8eb;
+    border-bottom: 2px solid;
+}
+
+.navbar .links .active a {
+    color: #2fd8eb;
+    border-bottom: 2px solid;
+}
+
+/* end navbar */
+/* start header */
+.header {
+    background-image: url('/assets/images/anthony-delanoix--s_fe5SCilU-unsplash.jpg');
+    background-size: cover;
+
+    height: 600px;
+    width: 1340px;
+    position: relative;
+}
+
+.header .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 1;
+}
+
+.header .overlay .heading {
+    background-color: #023035;
+    opacity: .65;
+}
+
+.header .overlay h1 {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 45px;
+    padding-top: 10px;
+    margin-bottom: 7px;
+}
+
+.header .overlay h1 span {
+    color: #2fd8eb;
+}
+
+.header .overlay p {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+/* end header */
+/* start services */
+.services {
+
+    padding: 60px 20px 40px;
+
+}
+
+.services h2 {
+    margin: 0 0 40px 50px;
+    color: #044d55;
+}
+
+.services .item {
+    float: left;
+    width: 28%;
+    padding: 20px;
+    margin-left: 2%;
+}
+
+.services .item i {
+    color: #20a4b3;
+    float: left;
+    width: 21%;
+    margin-right: 4%;
+    margin-top: 18px;
+}
+
+.services .item .info {
+    color: #044d55;
+    float: left;
+    width: 75%;
+}
+
+.services .item .info p {
+    color: #6fb1b4;
+}
+
+.our-team {
+    padding: 50px 20px;
+
+}
+
+/* .our-team .box:first-child{
+    width: 35%;
+} */
+.our-team .box:not(:first-child) {
+    /* width: 16.25%;
+    align-items: center; */
+    position: relative;
+}
+
+.our-team .box:not(:first-child):hover .overlay::after {
+    content: "team";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 183px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #044d55;
+    text-align: center;
+    background-color: #56c4d3;
+    display: none;
+}
+
+.our-team h2 {
+    color: #044d55;
+    margin-bottom: 40px;
+}
+
+.images {
+    padding-top: 45px;
+}
+
+/* end services and our team */
+.special-heading {
+    position: relative;
+}
+
+.special-article {
+    color: #59a4bb;
+}
+
+.special-heading:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 40px;
+    border-bottom: 2px solid #044d55;
+}
+
+.separator {
+    border: 1px solid #6fb1b4
+}
+
+/* start testimonials */
+.testim {
+    background: url(/assets/images/hayley-murray-2l5okfhfIU0-unsplash\ \(1\)\ \(1\).jpg);
+    background-size: 100% 100%;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 130px 0;
+}
+
+.testim .t-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #a3b2b4;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.testim h2 {
+    font-size: 40px;
+    margin: 110px 0 50px 380px;
+    border-bottom: 2px solid #20a4b3;
+    width: fit-content;
+
+}
+
+.testim q {
+    font-size: 15px;
+
+}
+
+.testim p {
+    font-size: 30px;
+    color: #20a4b3;
+}
+
+/* end testimonials */
+/* start projects */
+.our-projects {
+    padding: 70px 0;
+    height: 800px;
+}
+
+.our-projects h2 {
+    color: #044d55;
+}
+
+.our-projects ul {
+    margin-top: 50px;
+}
+
+.our-projects ul li {
+    display: inline-block;
+    border: 2px solid #a3b2b4;
+    padding: 10px;
+    border-radius: 5px;
+    color: #a3b2b4;
+    margin-right: 5px;
+}
+
+.our-projects ul .selected,
+.our-projects ul li:hover {
+    background-color: #95dae2;
+    color: #044d55;
+    border: 2px solid #95dae2;
+}
+
+.our-projects .gallery {
+    margin-top: 50px;
+}
+
+.our-projects .gallery .row>div {
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    margin-top: 1%;
+    float: left;
+    position: relative;
+}
+
+.our-projects .gallery .row>div:hover .over::after {
+    content: "View more";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 232px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #044d55;
+    text-align: center;
+    background-color: rgba(136, 192, 199, 0.7);
+    border-radius: 5px;
+    
+}
+
+.our-projects .gallery .row>div img {
+    border-radius: 5px;
+}
+
+/* end projects */
+/* start footer */
+.footer {
+    background-color: #003b41;
+    color: #a3b2b4;
+    padding: 40px;
+}
+
+.footer .col {
+    width: 21.5%;
+    float: left;
+    margin: 0 20px;
+
+}
+
+.footer .col h2 {
+    color: #67a5ac;
+
+}
+
+.footer .col p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+
+}
+
+.footer .col i {
+    display: inline-block;
+    margin: 0 7px;
+    border: 2px solid #a3b2b4;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.footer .col i:hover {
+    color: #fff;
+}
+
+.footer .copyright {
+    margin-top: 50px;
+    margin-left: 17px;
+}
+
+.footer .tags span {
+    display: inline-block;
+    border: 1px solid #a3b2b4;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.footer .recent div {
+    overflow: hidden;
+}
+
+.footer .recent div img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.footer .recent div h4 {
+    margin: 7px 0;
+}
+
+.footer .blog ul li {
+    padding: 15px;
+    border-bottom: 1px solid;
+}
+
+/* end footer */
+.navbar,
+.header,
+.services,
+.our-team,
+.testim,
+.our-projects,
+.footer {
+    min-width: 1154px;
+}
